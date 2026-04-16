@@ -1,0 +1,160 @@
+table{
+    display: table;
+    width: 100%;
+    height: auto;
+    border-spacing: 3px;
+}
+thead td{
+    background-color: #33261d;
+    padding: 15px;
+    
+}
+tbody td{
+    padding: 15px;
+    background-color: #334e58;
+    border-style: double;
+}    
+td{
+   border-style: solid;
+   text-align: center;
+}
+table thead tr td{
+    color: #334e58;
+}
+table tbody tr td{
+    color: #33261d;
+}
+td{
+    border-width:4px ;
+    border-style: double;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-image: url(../imgs/course\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+caption{
+    width: fit-content;
+    caption-side: top;
+    text-align: center;
+    display: table-caption;
+    margin: auto;
+    padding: 0%;
+    font-size: 224%;
+    color: #33261d;
+}
+div.title{
+    background-color: #33261d;
+    color: #334e58;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
+}
+.container{
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    overflow: visible;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+div.links ul{
+    text-align: center;
+    background-color: #334e58;
+    margin: 0%;
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: #33261d;
+    padding: 5%;
+    width: 116%;
+    display: flex;
+    justify-content: center;
+}
+.links a:hover{
+    background-color: #06181f;
+    color: azure;
+}
+hr{
+    color: #06181f;
+    height: 3px;
+    background-color: #06181f;
+}
+p{
+    display: flex;
+   margin: 0;
+   justify-content: center;
+   padding: 0%;
+   color: #33261d;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:768px){
+    .links a{
+        width: 91%;
+    }
+    div.links ul{
+        flex-direction:column ;
+    }
+            .container {
+        width: 100%;
+     }
+     .table{
+        width: 103%;
+        font-size: 51%;
+     }
+     nav{
+        font-size: 58%;
+     }
+}
+@media screen and (max-width:400px){
+    .container {
+        width: 100%;
+     }
+     .links ul li{
+        width: 100%;
+        text-align: center;
+     }
+     .table{
+        width: 100%;
+        font-size: 51%;
+        width: 100%;
+        font-size: 56%;
+    }
+    .table td{
+        padding: 0%;
+    }
+}
+@media screen and (max-width:333px){
+    .table{
+        width: 100%;
+        font-size: 56%;
+    }
+    .table td{
+        padding: 0%;
+    }
+}
+@media screen and (max-width: 270px){
+    p{
+        font-size: 53%;
+    }
+}
+footer{
+    background-color: #334e58;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}

@@ -1,0 +1,139 @@
+.container{
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    overflow: visible;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-image: url(../imgs/course\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+div.title{
+    background-color: #33261d;
+    color: #334e58;
+    text-align: center;
+    padding-bottom: 4%;
+    padding-top: 1%;
+}    
+div.links ul{
+    text-align: center;
+    background-color: #334e58;
+    margin: 0%;
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: #33261d;
+    padding: 5%;
+    width: 116%;
+    display: flex;
+    justify-content: center;
+}
+.links a:hover{
+    background-color: #06181f;
+    color: azure;
+}
+hr{
+    color: #06181f;
+    height: 3px;
+    background-color: #06181f;
+}
+.one{
+    display: flexbox;
+    background-color: rgb(51, 78, 88, 0.85);
+    color: #33261d;
+    border-style: solid;
+    border-color: black;
+    border-radius: 70px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.two{
+    display: flexbox;
+    background-color: rgb(51, 78, 88, 0.85);
+    color: #33261d;
+    border-style: solid;
+    border-color: black;
+    border-radius: 70px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.three{
+    display: flexbox;
+    background-color: rgb(51, 78, 88, 0.85);
+    color: #33261d;
+    border-style: solid;
+    border-color: black;
+    border-radius: 70px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+p{
+   display: flex;
+   margin: 0;
+   justify-content: center;
+   padding: 0%;
+   padding-bottom: 1px;
+   padding-top: 1px;
+   color: #33261d;
+}
+
+@media screen and (max-width:768px){
+    .links a{
+        width: 91%;
+    }
+    div.links ul{
+        flex-direction:column ;
+    }
+    .container {
+        width: 100%;
+    }
+    nav{
+        font-size: 58%;
+    }
+}
+@media screen and (max-width:400px){
+    .container {
+        width: 100%;
+    }
+    .links ul li{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 270px){
+    p{
+        font-size: 50%;
+    }
+}
+@media screen and (max-width:187px) {
+    .one{
+        border-radius: 28px;
+    }
+    .two{
+        border-radius: 36px;
+    }
+    .three{
+        border-radius: 29px;
+    }
+}
+footer{
+    background-color: #334e58;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
